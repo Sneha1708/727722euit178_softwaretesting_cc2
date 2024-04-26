@@ -25,7 +25,7 @@ import com.aventstack.extentreports.ExtentTest;
 
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-// 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AppTest 
@@ -111,7 +111,7 @@ public class AppTest
 
 
     @AfterMethod
-    public void myaftrmthd() throws Exception{
+    public void end() throws Exception{
         log.info("ExtentReport has been generated!");
         log.info("The given website has been tested with the given requirements");
         report.flush();
